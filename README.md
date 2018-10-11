@@ -13,4 +13,7 @@ webpack:
 - css-loader
 - eslint-loader
 
-TODO: .env support
+TODO:
+
+ - .env support
+ - hard update script
