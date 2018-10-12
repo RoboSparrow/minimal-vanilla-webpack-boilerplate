@@ -11,6 +11,7 @@ webpack:
 - HtmlWebpackPlugin
 - CleanWebpackPlugin
 - css-loader
+- style-loader
 - eslint-loader
 
 TODO:
