@@ -19,19 +19,24 @@ module.exports = {
 
     resolve: {
         extensions: ['.js'],
-        modules: [path.join(process.cwd(), 'src'), 'node_modules'] // include imported modules
+        modules: [path.join(process.cwd(), 'src'), 'node_modules'], // include imported modules
     },
 
     module: {
-        // eslint-loader
         rules: [{
+            // eslint-loader
             enforce: "pre", // force source files untouced by other loaders
             test: /\.js$/,
             exclude: /node_modules/,
-            loader: "eslint-loader"
-        },{
+            loader: "eslint-loader",
+        }, {
+            // css-loader
             test: /\.css$/,
-            use: [ 'style-loader', 'css-loader' ]
+            use: [ 'style-loader', 'css-loader' ],
+        }, {
+            // file-loader
+            test: /\.(png|svg|jpg|gif)$/,
+            use: [ 'file-loader' ],
         }],
     },
 
@@ -52,7 +57,7 @@ module.exports = {
     plugins: [
         // clean up build folder
         new CleanWebpackPlugin([ BUILD_PATH ], {
-            root: process.cwd()
+            root: process.cwd(),
         }),
         // parse and copy index.html
         new HtmlWebpackPlugin({

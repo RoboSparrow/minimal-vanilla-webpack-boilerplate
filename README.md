@@ -13,6 +13,7 @@ webpack:
 - css-loader
 - style-loader
 - eslint-loader
+- file-loader (configured for images)
 
 TODO:
 
