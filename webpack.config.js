@@ -41,7 +41,12 @@ module.exports = {
         port: 3008,
         open: true,
         hot: true,
-        contentBase: BUILD_PATH //serve from 'build' folder
+        stats: {
+            // minimal output on development terminal, show eslint errors and warns, surpress other stats
+            assets: false,
+            children: false,
+            modules: false,
+        },
     },
 
     plugins: [
