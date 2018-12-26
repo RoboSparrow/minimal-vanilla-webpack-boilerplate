@@ -1,6 +1,6 @@
 # Minimal webpack boilerplate
 
-Simple webpack boilerplate for vanilla projects
+Simple webpack boilerplate for vanilla projects:
 
 - eslint airbnb
 - mocha
