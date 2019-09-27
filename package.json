@@ -1,12 +1,12 @@
 {
   "name": "minimal-vanilla-webpack-boilerplate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.19",
-    "cross-env": "^5.2.0",
-    "css-loader": "^1.0.0",
-    "eslint": "^5.7.0",
+    "cross-env": "^5.2.1",
+    "css-loader": "^1.0.1",
+    "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-loader": "^2.1.1",
     "eslint-plugin-import": "^2.14.0",
@@ -21,7 +21,9 @@
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10"
   },
-  "dependencies": {},
+  "dependencies": {
+    "undefined": "^0.1.0"
+  },
   "scripts": {
     "start": "npm run dev",
     "dev": "webpack-dev-server --mode development --config webpack.config.js",

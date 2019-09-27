@@ -1,0 +1,19 @@
+#!/bin/bash
+npm install \
+  clean-webpack-plugin \
+  cross-env \
+  css-loader \
+  eslint \ 
+  eslint-config-airbnb \
+  eslint-loader \
+  eslint-plugin-import \
+  eslint-plugin-jsx-a11y \
+  eslint-plugin-react \
+  file-loader \
+  html-webpack-plugin \
+  mocha \
+  npm-run-all \
+  style-loader \
+  webpack \
+  webpack-cli \
+  webpack-dev-server
